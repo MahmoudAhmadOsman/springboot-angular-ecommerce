@@ -21,7 +21,7 @@ public class ProductCategory {
     @Column(name = "category_name")
     private String categoryName;
 
-    //Collection - Java Collection
+    //Collection - Java Collection -- also se the Product rel. on the Product Class
     //==================@OneToMany====================//
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "category")
     private Set<Product> products;
