@@ -2,13 +2,11 @@
   <div class="row">
     <div class="col-lg-4" *ngFor="let product of products">
       <div class="card">
-        <img
-          class="images"
-          src="assets/images/cpp.jpg"
-          alt="{{product.name}}"
-        />
+        <!-- {{product.imageUrl}} -->
+
+        <img class="images" src="{{product.imageUrl}}" alt="{{product.name}}" />
         <div class="card-body">
-          <h5 class="card-title"><b>Product Name: </b>{{product.name}}</h5>
+          <p class="card-title"><b>Product Name: </b>{{product.name}}</p>
           <p class="card-text">
             <b>Product SKU: </b>{{product.sku}}
             <b>Description:</b> {{product.description}} <br />
