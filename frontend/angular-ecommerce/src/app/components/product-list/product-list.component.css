@@ -1,0 +1,10 @@
+.all__products {
+  position: relative;
+}
+.all__products img {
+  height: 200px;
+}
+
+.all__products .card {
+  margin-bottom: 30px;
+}

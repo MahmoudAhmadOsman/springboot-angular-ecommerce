@@ -1,0 +1,27 @@
+<section class="all__products">
+  <div class="row">
+    <div class="col-lg-4" *ngFor="let product of products">
+      <div class="card">
+        <img
+          class="images"
+          src="assets/images/cpp.jpg"
+          alt="{{product.name}}"
+        />
+        <div class="card-body">
+          <h5 class="card-title"><b>Product Name: </b>{{product.name}}</h5>
+          <p class="card-text">
+            <b>Product SKU: </b>{{product.sku}}
+            <b>Description:</b> {{product.description}} <br />
+            <b>Price:</b> ${{product.unitPrice}} <br />
+            <b>Unit In Stock:</b> {{product.unitInStock}} <br />
+            <b>Active:</b> {{product.active}} <br />
+            <b>Product Image:</b> {{product.imageUrl}} <br />
+            <b>Created Date:</b> {{product.dateCreated | date}} <br />
+            <b>Update Date:</b> {{product.dateUpdated}} <br />
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
