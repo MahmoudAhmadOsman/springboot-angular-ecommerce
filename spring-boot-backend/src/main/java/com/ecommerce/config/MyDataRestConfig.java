@@ -7,9 +7,9 @@ import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
 import org.springframework.http.HttpMethod;
 
-//READ ONLY
+//READ ONLY HTTP METHODS
 
-@Configuration
+@Configuration // Add support configuration
 public class MyDataRestConfig implements RepositoryRestConfigurer {
 
     @Override
@@ -19,14 +19,14 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
         HttpMethod[] theUnsupportedActions ={HttpMethod.PUT, HttpMethod.POST, HttpMethod.DELETE};
 
 
-        //Now, disable HTTP methods for Product PUT, POTS & Delete
+        //Now, disable HTTP methods for the Product [ PUT, POST & DELETE ] from the outside world
         config.getExposureConfiguration()
                 .forDomainType(Product.class)
                 .withAssociationExposure((metdata, httpMethods) -> httpMethods.disable(theUnsupportedActions) )
                 .withCollectionExposure((metdata, httpMethods) -> httpMethods.disable(theUnsupportedActions));
 
 
-        //Now, disable HTTP methods for ProductCategory PUT, POTS & Delete
+        //Now, disable HTTP methods for ProductCategory PUT, POST & DELETE
         config.getExposureConfiguration()
                 .forDomainType(ProductCategory.class)
                 .withAssociationExposure((metdata, httpMethods) -> httpMethods.disable(theUnsupportedActions) )

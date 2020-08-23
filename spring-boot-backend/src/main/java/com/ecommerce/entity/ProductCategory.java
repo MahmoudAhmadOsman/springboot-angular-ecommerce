@@ -8,7 +8,7 @@ import java.util.Set;
 
 @Entity
 @Table(name="product_category")
-// @Data -- sometimes lombok causes error so use @Getter and @Setter instead to avoid error
+// @Data -- sometimes lombok causes error so use @Getter and @Setter instead of using @Column etc to avoid error
 @Getter
 @Setter
 public class ProductCategory {

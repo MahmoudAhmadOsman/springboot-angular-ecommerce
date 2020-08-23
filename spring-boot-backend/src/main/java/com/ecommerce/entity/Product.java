@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
-@Table(name = "product")
+@Table(name = "product")  //Hibernate Entity - match the java class to the db column name
 @Data
 public class Product {
 
@@ -20,7 +20,7 @@ public class Product {
     private Long id;
 
 
-    //==================@MnayToOne====================//
+    //==================@ManyToOne====================//
     //======================================//
 //Set relationship to ProductCategory Table to many to one
     @ManyToOne
