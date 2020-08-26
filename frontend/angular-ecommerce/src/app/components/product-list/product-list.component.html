@@ -1,25 +1,30 @@
-<section class="all__products">
-  <div class="row">
-    <div class="col-lg-4" *ngFor="let product of products">
-      <div class="card">
-        <!-- {{product.imageUrl}} -->
+     <!-- MAIN CONTENT-->
 
-        <img class="images" src="{{product.imageUrl}}" alt="{{product.name}}" />
-        <div class="card-body">
-          <p class="card-title"><b>Product Name: </b>{{product.name}}</p>
-          <p class="card-text">
-            <b>Product SKU: </b>{{product.sku}}
-            <b>Description:</b> {{product.description}} <br />
-            <b>Price:</b> ${{product.unitPrice}} <br />
-            <b>Unit In Stock:</b> {{product.unitInStock}} <br />
-            <b>Active:</b> {{product.active}} <br />
-            <!-- <b>Product Image:</b> {{product.imageUrl}} <br /> -->
-            <b>Created Date:</b> {{product.dateCreated | date}} <br />
-            <b>Update Date:</b> {{product.dateUpdated}} <br />
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+     <div class="main-content">
+       <h1 class="text-danger">Products</h1>
+       <hr><br>
+       <div class="section-content section-content-p30">
+         <div class="container-fluid">
+           <div class="row">
+             <div class="col-md-3 col-xs-12" *ngFor="let product of products">
+               <div class="product-box">
+                 <a href="product-detail.html">
+                   <img src="{{product.imageUrl}}" class="img-responsive">
+                 </a>
+                 <a href="product-detail.html">
+                   <h1>{{product.name}}</h1>
+                 </a>
+                 <h2>{{product.description}}</h2>
+                 <div class="price">${{product.unitPrice}}</div>
+                 <a href="#" class="primary-btn">Add to cart</a>
+
+               </div>
+
+             </div>
+
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <!-- END MAIN CONTENT-->
