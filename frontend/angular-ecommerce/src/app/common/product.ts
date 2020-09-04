@@ -1,3 +1,4 @@
+//MODEL
 export class Product {
   //Here is where you list all the properties that match the Java Class [Product] in the backend in Spring Boot
   name: String;
