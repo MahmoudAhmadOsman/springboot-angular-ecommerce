@@ -8,7 +8,8 @@ import { map } from "rxjs/operators";
   providedIn: "root",
 })
 export class ProductService {
-  private baseUrl = "http://localhost:8080/api/products"; //Spring Boot backend API
+  //Base URL ?size=100 -> return all the products in the DATABASE
+  private baseUrl = "http://localhost:8080/api/products?size=100"; //Spring Boot backend API
 
   constructor(private httClient: HttpClient) {}
 

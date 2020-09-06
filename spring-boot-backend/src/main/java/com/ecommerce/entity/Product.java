@@ -22,7 +22,7 @@ public class Product {
 
     //==================@ManyToOne====================//
     //======================================//
-//Set relationship to ProductCategory Table to many to one
+//Set relationship to ProductCategory Table to [ ManyToOne ] relationship
     @ManyToOne
     @JoinColumn(name = "category_id", nullable = false)
     private ProductCategory category;

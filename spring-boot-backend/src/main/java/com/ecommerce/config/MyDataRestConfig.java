@@ -9,7 +9,7 @@ import org.springframework.http.HttpMethod;
 
 //READ ONLY HTTP METHODS
 
-@Configuration // Add support configuration
+@Configuration // Add support @Configuration
 public class MyDataRestConfig implements RepositoryRestConfigurer {
 
     @Override

@@ -144,7 +144,8 @@ aside.menu-sidebar.d-none.d-lg-block.clr {
  */
 
 .header-desktop {
-  background: #0da8e4;
+  /*background: #0da8e4;*/
+  background-color: #70879a;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
