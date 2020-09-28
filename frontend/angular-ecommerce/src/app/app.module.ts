@@ -8,9 +8,11 @@ import { HttpClientModule } from "@angular/common/http";
 import { ProductListComponent } from "./components/product-list/product-list.component";
 import { NavComponent } from './components/nav/nav.component';
 import { ProductGridComponent } from './components/product-grid/product-grid.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, ProductListComponent, NavComponent, ProductGridComponent],
+  declarations: [AppComponent, ProductListComponent, NavComponent, ProductGridComponent, ProductDetailsComponent, FooterComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [ProductService],
   bootstrap: [AppComponent],

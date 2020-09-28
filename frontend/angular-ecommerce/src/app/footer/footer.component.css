@@ -1,0 +1,12 @@
+footer {
+  min-height: 50px;
+  line-height: 50px;
+
+}
+
+
+
+footer .copy-right {
+  text-align: center;
+  font-size: 11px;
+}
