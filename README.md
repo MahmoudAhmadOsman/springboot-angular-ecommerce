@@ -13,4 +13,6 @@
 | 1. Java    	      |  Developed in Java 8  	                                         |
 | 2. Apache Maven    	| Software project management and comprehension tool    	           |
 | 3. MYSQL              | Database storage  	                                               |
+| 4. Spring Boot   	| Java full stack framework  	                                         |
+| 5. JPA   	            | Hibernate specification for database interactivity  	           |
  
