@@ -1,4 +1,5 @@
 <!-- MAIN CONTENT-->
+
 <div class="main-content">
   <h1 class="text-danger">Products</h1>
   <hr />
@@ -9,11 +10,7 @@
         <div class="col-md-3 col-xs-12" *ngFor="let product of products">
           <div class="product-box">
             <a href="product-detail.html">
-              <img
-                src="{{product.imageUrl}}"
-                class="img-responsive"
-                alt="{{product.name}}"
-              />
+              <img src="{{product.imageUrl}}" class="img-responsive" />
             </a>
             <p class="text-muted">SKU: {{product.sku}}</p>
             <a href="product-detail.html">

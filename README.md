@@ -7,7 +7,6 @@
 > This application utilizes the following technologies
 
 
-
 | Technology   	      | Description    	                                                     |
 |----	|-----------	                                                                       |
 | 1. Java    	      |  Developed in Java 8  	                                         |
